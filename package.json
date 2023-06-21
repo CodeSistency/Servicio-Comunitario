@@ -1,0 +1,32 @@
+{
+  "name": "nexttutorial",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@devexpress/dx-react-core": "^4.0.4",
+    "@devexpress/dx-react-scheduler": "^4.0.4",
+    "@devexpress/dx-react-scheduler-material-ui": "^4.0.4",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/lab": "^5.0.0-alpha.134",
+    "@mui/material": "^5.13.5",
+    "@mui/x-date-pickers": "^6.7.0",
+    "bcryptjs": "^2.4.3",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.3",
+    "moment": "^2.29.4",
+    "mongoose": "6.11.1",
+    "next": "13.4.3",
+    "next-auth": "^4.22.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swr": "^2.1.5"
+  }
+}
