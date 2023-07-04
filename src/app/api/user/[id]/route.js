@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import connect from "@/utils/db";
 import User from "@/models/User";
+import { TableBody } from "@mui/material";
 
 export const GET = async (request, { params }) => {
   const { id } = params;
@@ -16,22 +17,23 @@ export const GET = async (request, { params }) => {
   }
 };
 
-export const PUT = async (request, { params }) => {
+export async function PUT(request, { params }) {
   const { id } = params;
-  const body = await request.json();
+  // const { nombre: nombre, apellido: apellido, cedula: cedula, email: email, password: password } = await request.json();
+  const body = await request.json()
+  console.log(body)
+  console.log(id)
+  try{
 
-  
-
-  try {
-    await connect();
-
-    await User.findOneAndUpdate(id, {body});
-
-    return new NextResponse("Post has been updated", { status: 200 });
-  } catch (err) {
-    return new NextResponse("Database Error", { status: 500 });
+      await connect();
+      await User.findByIdAndUpdate(id, body);
+      // return NextResponse.json({ message: "user updated" }, { status: 200 });
+      return new NextResponse("Actualizado", { status: 200 });
+    } catch (err) {
+      return new NextResponse("Database Error", { status: 500 });
+    }
   }
-};
+
 
 export const DELETE = async (request, { params }) => {
   const { id } = params;

@@ -34,8 +34,10 @@ const Estudiante = ({params}) => {
   // }, []);
 
   const session = useSession();
-
   const router = useRouter();
+
+  //ID
+   
   
   //NEW WAY TO FETCH DATA
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
@@ -55,20 +57,24 @@ const Estudiante = ({params}) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const name = e.target[0].value;
+    const nombre = e.target[0].value;
     const apellido = e.target[1].value;
     const cedula = e.target[2].value;
     const email = e.target[3].value;
+    const password = e.target[4].value;
     router?.push("admin");
 
+    console.log(`/api/user/${params.id}`)
+
     try {
-        await fetch(`/api/user/${id}`, {
+        await fetch(`/api/user/${params.id}`, {
           method: "PUT",
           body: JSON.stringify({
               cedula,
               email,
-              name, 
-              apellido
+              nombre, 
+              apellido,
+              password
             }),
         });
         mutate();
@@ -92,6 +98,7 @@ const Estudiante = ({params}) => {
           <input type="text" placeholder="Apellido" className={styles.input} />
           <input type="number" placeholder="Cedula" className={styles.input} />
           <input type="email" placeholder="email" className={styles.input} />
+          <input type="password" placeholder="password" className={styles.input} />
           
           <button className={styles.button}>Send</button>
         </form>

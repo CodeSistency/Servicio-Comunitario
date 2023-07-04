@@ -64,87 +64,87 @@ const Dashboard = () => {
     const añoActual = e.target[6].value;
     const seccion = e.target[7].value;
 
-    const primerAñoMatematica_1 = e.target[8].value;
-    const primerAñoDeporte_1 = e.target[9].value;
-    const primerAñoBiologia_1 = e.target[10].value;
-    const primerAñoFisica_1 = e.target[11].value;
+    const primerAnoMatematica_1 = e.target[8].value;
+    const primerAnoDeporte_1 = e.target[9].value;
+    const primerAnoBiologia_1 = e.target[10].value;
+    const primerAnoFisica_1 = e.target[11].value;
 
-    const primerAñoMatematica_2 = e.target[12].value;
-    const primerAñoDeporte_2 = e.target[13].value;
-    const primerAñoBiologia_2 = e.target[14].value;
-    const primerAñoFisica_2 = e.target[15].value;
+    const primerAnoMatematica_2 = e.target[12].value;
+    const primerAnoDeporte_2 = e.target[13].value;
+    const primerAnoBiologia_2 = e.target[14].value;
+    const primerAnoFisica_2 = e.target[15].value;
 
-    const primerAñoMatematica_3 = e.target[16].value;
-    const primerAñoDeporte_3 = e.target[17].value;
-    const primerAñoBiologia_3 = e.target[18].value;
-    const primerAñoFisica_3 = e.target[19].value;
+    const primerAnoMatematica_3 = e.target[16].value;
+    const primerAnoDeporte_3 = e.target[17].value;
+    const primerAnoBiologia_3 = e.target[18].value;
+    const primerAnoFisica_3 = e.target[19].value;
 
-    const segundoAñoMatematica_1 = e.target[20].value;
-    const segundoAñoDeporte_1 = e.target[21].value;
-    const segundoAñoBiologia_1 = e.target[22].value;
-    const segundoAñoFisica_1 = e.target[23].value;
+    const segundoAnoMatematica_1 = e.target[20].value;
+    const segundoAnoDeporte_1 = e.target[21].value;
+    const segundoAnoBiologia_1 = e.target[22].value;
+    const segundoAnoFisica_1 = e.target[23].value;
 
-    const segundoAñoMatematica_2 = e.target[24].value;
-    const segundoAñoDeporte_2 = e.target[25].value;
-    const segundoAñoBiologia_2 = e.target[26].value;
-    const segundoAñoFisica_2 = e.target[27].value;
+    const segundoAnoMatematica_2 = e.target[24].value;
+    const segundoAnoDeporte_2 = e.target[25].value;
+    const segundoAnoBiologia_2 = e.target[26].value;
+    const segundoAnoFisica_2 = e.target[27].value;
 
-    const segundoAñoMatematica_3 = e.target[28].value;
-    const segundoAñoDeporte_3 = e.target[29].value;
-    const segundoAñoBiologia_3 = e.target[30].value;
-    const segundoAñoFisica_3 = e.target[31].value;
+    const segundoAnoMatematica_3 = e.target[28].value;
+    const segundoAnoDeporte_3 = e.target[29].value;
+    const segundoAnoBiologia_3 = e.target[30].value;
+    const segundoAnoFisica_3 = e.target[31].value;
 
-    const tercerAñoMatematica_1 = e.target[32].value;
-    const tercerAñoDeporte_1 = e.target[33].value;
-    const tercerAñoBiologia_1 = e.target[34].value;
-    const tercerAñoFisica_1 = e.target[35].value;
+    const tercerAnoMatematica_1 = e.target[32].value;
+    const tercerAnoDeporte_1 = e.target[33].value;
+    const tercerAnoBiologia_1 = e.target[34].value;
+    const tercerAnoFisica_1 = e.target[35].value;
 
-    const tercerAñoMatematica_2 = e.target[36].value;
-    const tercerAñoDeporte_2 = e.target[37].value;
-    const tercerAñoBiologia_2 = e.target[38].value;
-    const tercerAñoFisica_2 = e.target[39].value;
+    const tercerAnoMatematica_2 = e.target[36].value;
+    const tercerAnoDeporte_2 = e.target[37].value;
+    const tercerAnoBiologia_2 = e.target[38].value;
+    const tercerAnoFisica_2 = e.target[39].value;
 
-    const tercerAñoMatematica_3 = e.target[40].value;
-    const tercerAñoDeporte_3 = e.target[41].value;
-    const tercerAñoBiologia_3 = e.target[42].value;
-    const tercerAñoFisica_3 = e.target[43].value;
+    const tercerAnoMatematica_3 = e.target[40].value;
+    const tercerAnoDeporte_3 = e.target[41].value;
+    const tercerAnoBiologia_3 = e.target[42].value;
+    const tercerAnoFisica_3 = e.target[43].value;
 
-    const cuartoAñoMatematica_1 = e.target[44].value;
-    const cuartoAñoDeporte_1 = e.target[45].value;
-    const cuartoAñoBiologia_1 = e.target[46].value;
-    const cuartoAñoFisica_1 = e.target[47].value;
+    const cuartoAnoMatematica_1 = e.target[44].value;
+    const cuartoAnoDeporte_1 = e.target[45].value;
+    const cuartoAnoBiologia_1 = e.target[46].value;
+    const cuartoAnoFisica_1 = e.target[47].value;
 
-    const cuartoAñoMatematica_2 = e.target[48].value;
-    const cuartoAñoDeporte_2 = e.target[49].value;
-    const cuartoAñoBiologia_2 = e.target[50].value;
-    const cuartoAñoFisica_2 = e.target[51].value;
+    const cuartoAnoMatematica_2 = e.target[48].value;
+    const cuartoAnoDeporte_2 = e.target[49].value;
+    const cuartoAnoBiologia_2 = e.target[50].value;
+    const cuartoAnoFisica_2 = e.target[51].value;
 
-    const cuartoAñoMatematica_3 = e.target[52].value;
-    const cuartoAñoDeporte_3 = e.target[53].value;
-    const cuartoAñoBiologia_3 = e.target[54].value;
-    const cuartoAñoFisica_3 = e.target[55].value;
+    const cuartoAnoMatematica_3 = e.target[52].value;
+    const cuartoAnoDeporte_3 = e.target[53].value;
+    const cuartoAnoBiologia_3 = e.target[54].value;
+    const cuartoAnoFisica_3 = e.target[55].value;
 
-    const quintoAñoMatematica_1 = e.target[56].value;
-    const quintoAñoDeporte_1 = e.target[57].value;
-    const quintoAñoBiologia_1 = e.target[58].value;
-    const quintoAñoFisica_1 = e.target[59].value;
+    const quintoAnoMatematica_1 = e.target[56].value;
+    const quintoAnoDeporte_1 = e.target[57].value;
+    const quintoAnoBiologia_1 = e.target[58].value;
+    const quintoAnoFisica_1 = e.target[59].value;
 
-    const quintoAñoMatematica_2 = e.target[60].value;
-    const quintoAñoDeporte_2 = e.target[61].value;
-    const quintoAñoBiologia_2 = e.target[62].value;
-    const quintoAñoFisica_2 = e.target[63].value;
+    const quintoAnoMatematica_2 = e.target[60].value;
+    const quintoAnoDeporte_2 = e.target[61].value;
+    const quintoAnoBiologia_2 = e.target[62].value;
+    const quintoAnoFisica_2 = e.target[63].value;
 
-    const quintoAñoMatematica_3 = e.target[64].value;
-    const quintoAñoDeporte_3 = e.target[65].value;
-    const quintoAñoBiologia_3 = e.target[66].value;
-    const quintoAñoFisica_3 = e.target[67].value;
+    const quintoAnoMatematica_3 = e.target[64].value;
+    const quintoAnoDeporte_3 = e.target[65].value;
+    const quintoAnoBiologia_3 = e.target[66].value;
+    const quintoAnoFisica_3 = e.target[67].value;
 
     const notas = [{
         primero: [{
             lapso_1:{
-                matematica : primerAñoMatematica_1,
-                biologia : primerAñoBiologia_1,
-                fisica: primerAñoFisica_1
+                matematica : primerAnoMatematica_1,
+                biologia : primerAnoBiologia_1,
+                fisica: primerAnoFisica_1
             },
         }]
     }]
@@ -158,7 +158,10 @@ const Dashboard = () => {
           cedula,
           email,
           password,
-          notas
+          edad,
+          añoActual,
+          seccion
+        
           
         }),
       });

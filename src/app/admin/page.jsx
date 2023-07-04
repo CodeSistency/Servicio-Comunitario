@@ -105,7 +105,7 @@ const Admin = () => {
                   <p className={styles.postTitle}>{user.email}</p>
                   <p className={styles.postTitle}>{user.curso_actual ? user.curso_actual : `No hay datos`}</p>
                   <p className={styles.postTitle}>{user.seccion ? user.seccion : `No hay datos`}</p>
-                  <Link href={`/admin/editar/${user._id}`}></Link>
+                  <Link href={`/admin/editar/${user._id}`}>clik</Link>
                   <span
                     className={styles.delete}
                     onClick={() => handleDelete(user._id)}
