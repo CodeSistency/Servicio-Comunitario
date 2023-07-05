@@ -58,10 +58,10 @@ const userSchema = new Schema(
       type: Number,
       required: false,
     },
-    seccion:{
+    /* seccion:{
       type: String,
       required: false,
-    },
+    }, */
     notas: {
       type: Array
     },
