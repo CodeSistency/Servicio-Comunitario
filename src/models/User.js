@@ -32,38 +32,38 @@ const userSchema = new Schema(
   {
     nombre: {
       type: String,
-      
+
       required: true,
     },
     apellido: {
       type: String,
-      
+
       required: true,
     },
     cedula: {
       type: Number,
-      
+
       required: true,
     },
     email: {
       type: String,
-      
+
       required: true,
     },
     password: {
       type: String,
       required: true,
     },
-    curso_actual:{
+    curso_actual: {
       type: Number,
       required: false,
     },
-    /* seccion:{
+    seccion: {
       type: String,
       required: false,
-    }, */
+    },
     notas: {
-      type: Array
+      type: Array,
     },
     // notas: [{
     //     primero: [{
@@ -72,11 +72,10 @@ const userSchema = new Schema(
     //         fisica: Number,
     //         quimica: Number,
     //       },
-          
+
     //     }],
     //    }],
-      
-    
+
     // notas: [{
     //   primero: [{
     //     lapso_1: {
