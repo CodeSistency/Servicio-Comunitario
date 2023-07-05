@@ -59,9 +59,10 @@ const userSchema = new Schema(
       type: String,
       default: " ",
     },
-    /* notas: {
-      type: Array
-    }, */
+    notas: {
+      type: Array,
+      default: new Array([{}]),
+    },
     // notas: [{
     //     primero: [{
     //       lapso_1: {
