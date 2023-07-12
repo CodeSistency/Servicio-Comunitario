@@ -18,6 +18,7 @@ const handler = NextAuth({
         try {
           const user = await User.findOne({
             email: credentials.email,
+            cedula: credentials.cedula
           });
 
           // if (user) {

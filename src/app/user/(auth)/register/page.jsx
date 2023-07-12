@@ -14,6 +14,7 @@ const Register = () => {
     const name = e.target[0].value;
     const email = e.target[1].value;
     const password = e.target[2].value;
+    const cedula = e.target[3].value;
 
     try {
       const res = await fetch("/api/auth/register", {
@@ -25,6 +26,7 @@ const Register = () => {
           name,
           email,
           password,
+          cedula
         }),
       });
       res.status === 201 && router.push("/user/login?success=Account has been created");
@@ -36,12 +38,12 @@ const Register = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Create an Account</h1>
-      <h2 className={styles.subtitle}>Please sign up to see the dashboard.</h2>
+      <h1 className={styles.title}>Crea tu perfil</h1>
+      <h2 className={styles.subtitle}>Registrate para ver tu dashboard.</h2>
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
           type="text"
-          placeholder="nombre"
+          placeholder="Nombre"
           required
           className={styles.input}
         />
@@ -54,6 +56,12 @@ const Register = () => {
         <input
           type="password"
           placeholder="Password"
+          required
+          className={styles.input}
+        />
+        <input
+          type="number"
+          placeholder="Cedula"
           required
           className={styles.input}
         />

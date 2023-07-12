@@ -1,20 +1,23 @@
 import { NextResponse } from "next/server";
 import connect from "@/utils/db";
 import User from "@/models/User";
-import { TableBody } from "@mui/material";
+
 
 export const GET = async (request, { params }) => {
   const { id } = params;
+  await connect();
+  const user = await User.findOne({ _id: id });
+  return NextResponse.json({ user }, { status: 200 });
 
-  try {
-    await connect();
+  // try {
+  //   await connect();
 
-    const user = await User.findById(id);
+  //   const user = await User.findById(id);
 
-    return new NextResponse(JSON.stringify(user), { status: 200 });
-  } catch (err) {
-    return new NextResponse("Database Error", { status: 500 });
-  }
+  //   return new NextResponse(JSON.stringify(user), { status: 200 });
+  // } catch (err) {
+  //   return new NextResponse("Database Error", { status: 500 });
+  // }
 };
 
 export async function PUT(request, { params }) {

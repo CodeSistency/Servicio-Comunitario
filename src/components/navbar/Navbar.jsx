@@ -5,6 +5,7 @@ import React from "react";
 import styles from "./navbar.module.css";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import { signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 
 const links = [
   {
@@ -15,7 +16,7 @@ const links = [
 
   {
     id: 2,
-    title: "Account",
+    title: "Cuenta",
     url: "/user",
   },
 ];
@@ -26,7 +27,14 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
-        Cabrera Malo
+        <Image 
+        src="logoliceo.svg"
+        width={80}
+        height={80}
+        alt="logo"
+        />
+        <h2>Cabrera Malo</h2>
+        
       </Link>
       <div className={styles.links}>
         <DarkModeToggle />
