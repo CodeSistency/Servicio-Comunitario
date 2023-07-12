@@ -4,23 +4,17 @@ import bcrypt from "bcryptjs";
 import { NextResponse } from "next/server";
 
 export const POST = async (request) => {
-  const { nombre, apellido, cedula, email, password } = await request.json();
-
+  const { name, email, password, cedula } = await request.json();
+  console.log({ name, email, password });
   await connect();
 
   const hashedPassword = await bcrypt.hash(password, 5);
 
   const newUser = new User({
-    nombre,
-    apellido,
-    cedula,
+    nombre: name,
     email,
     password: hashedPassword,
-    seccion,
-    role,
-    notas,
-    curso_actual
-    
+    cedula
   });
 
   try {

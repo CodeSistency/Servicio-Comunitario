@@ -87,7 +87,7 @@ const Admin = () => {
     }
   };
 
-  if (session.status === "authenticated") {
+  if (session.status === "authenticated" && session?.data?.user?.email === "valero.jozee@gmail.com") {
     return (
       <div >
         <div className={styles.add}>
@@ -100,19 +100,21 @@ const Admin = () => {
             : data?.map((user) => (
                 <div className={styles.post} key={user._id}>
                 
-                  
-                  <p className={styles.postTitle}>{user.name}</p>
-                  <p className={styles.postTitle}>{user.email}</p>
-                  <p className={styles.postTitle}>{user.curso_actual ? user.curso_actual : `No hay datos`}</p>
-                  <p className={styles.postTitle}>{user.seccion ? user.seccion : `No hay datos`}</p>
-                  <Link href={`/admin/editar/${user._id}`}>clik</Link>
-                  <span
-                    className={styles.delete}
-                    onClick={() => handleDelete(user._id)}
-                  >
-                    X
-                  </span>
-                
+                  <div className={styles.postGroup}>
+                    <p className={styles.postTitle}>{user.nombre}</p>
+                    <p className={styles.postTitle}>{user.email}</p>
+                    <p className={styles.postTitle}>{user.cedula}</p>
+                  </div>
+
+                  <div className={styles.postGroup}>
+                    <Link href={`/admin/editar/${user._id}`}>editar</Link>
+                    <span
+                      className={styles.delete}
+                      onClick={() => handleDelete(user._id)}
+                    >
+                      X
+                    </span>
+                  </div>
                 </div>
               ))}
         </div>

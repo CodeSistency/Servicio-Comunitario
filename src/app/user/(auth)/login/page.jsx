@@ -22,7 +22,7 @@ const Login = ({ url }) => {
   }
 
   if (session.status === "authenticated") {
-    if(session?.data?.user?.name == "admin111003"){
+    if(session?.data?.user?.email === "valero.jozee@gmail.com"){
       router?.push("/admin");
     }else if(session?.data?.user?.role == "profesor"){
       router?.push("/profesor");
@@ -36,17 +36,19 @@ const Login = ({ url }) => {
     e.preventDefault();
     const email = e.target[0].value;
     const password = e.target[1].value;
+    const cedula = e.target[2].value;
 
     signIn("credentials", {
       email,
       password,
+      cedula,
     });
   };
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>{success ? success : "Welcome Back"}</h1>
-      <h2 className={styles.subtitle}>Please sign in to see the dashboard.</h2>
+      <h1 className={styles.title}>{success ? success : "Bienvenido"}</h1>
+      <h2 className={styles.subtitle}>Por favor inicia sesión.</h2>
 
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
@@ -61,6 +63,12 @@ const Login = ({ url }) => {
           required
           className={styles.input}
         />
+        <input
+          type="number"
+          placeholder="Cedula"
+          required
+          className={styles.input}
+        />
         <button className={styles.button}>Login</button>
         {error && error}
       </form>
@@ -72,9 +80,9 @@ const Login = ({ url }) => {
       >
         Login with Google
       </button> */}
-      <span className={styles.or}>- OR -</span>
+      <span className={styles.or}>- O -</span>
       <Link className={styles.link} href="/user/register">
-        Create new account
+        Crea una cuenta
       </Link>
       {/* <button
         onClick={() => {

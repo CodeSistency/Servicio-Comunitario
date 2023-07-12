@@ -7,11 +7,27 @@
   flex: 1;
 }
 
-.post {
+.notas_container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 50px 0px;
+  flex-wrap: wrap;
+  gap: 25px;
+  
+}
+
+.container > div > h3, .container > div > h4 {
+  margin-bottom: 25px;
+}
+
+.container > div > hr {
+  margin: 10px 0;
+}
+
+.notas > p{
+  margin-bottom: 5px;
+}
+
+.notas {
+  margin-bottom: 15px;
 }
 
 .imgContainer {

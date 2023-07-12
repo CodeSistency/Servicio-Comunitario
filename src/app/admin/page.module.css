@@ -14,6 +14,11 @@
   margin: 20px 0px;
 }
 
+.postGroup{
+  display: flex;
+  gap: 20px;
+}
+
 .imgContainer {
   width: 200px;
   height: 100px;

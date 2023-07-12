@@ -13,7 +13,7 @@ export default function Home() {
         <p className={styles.desc}>
           Estudia aquí en nuestra institución. Te acercamos a un mejor futuro.
         </p>
-        <Button url="/register" text="Registrate" className="button"/>
+        <Button url="user/register" text="Registrate" className="button"/>
       </div>
       <div className={styles.item}>
         <Image src={Hero} alt="" className={styles.img} />
